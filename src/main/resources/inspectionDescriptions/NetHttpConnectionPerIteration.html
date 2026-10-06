@@ -1,0 +1,9 @@
+<html>
+<body>
+Reports a <code>Net::HTTP.get</code>, <code>.get_response</code> or <code>.post</code> shorthand call inside a loop or
+iterator block (<code>.each do</code>, <code>.times do</code>, <code>while</code>, <code>for</code>, <code>{ }</code>).
+<!-- tooltip end -->
+<p>The shorthand methods open and close a connection on every call, so the loop pays a new TCP handshake on every
+iteration. Open the connection once with <code>Net::HTTP.start(...)</code> and send the requests through it.</p>
+</body>
+</html>
